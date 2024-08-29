@@ -12,6 +12,13 @@ body{
   background-color: #e3eaf2;
 }
 
+.cont-init{
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .cont-header{
   display: flex;
   justify-content: center;
@@ -142,5 +149,20 @@ footer {
   footer{
     z-index: -1;
   
+  }
+
+  .cont-init{
+    width: 100%;
+    margin: 10px autos;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cont-init h2,
+  .cont-init h3{
+    font-size: 15px;
+  }
+
+  .cont-init h2{
+    width: 50%;
   }
 }

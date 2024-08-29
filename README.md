@@ -36,11 +36,6 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
     - El proyecto se abrirá automáticamente en tu navegador predeterminado en la dirección `http://127.0.0.1:5500/` (o similar).
 
-## Estructura del Proyecto
-
-- **`index.html`**: Archivo principal HTML del proyecto.
-- **`styles.css`**: Archivo de estilos CSS.
-- **`script.js`**: Archivo JavaScript principal.
 
 ## Notas
 

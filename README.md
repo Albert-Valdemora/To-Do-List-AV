@@ -1,4 +1,4 @@
-# Proyecto de [Nombre del Proyecto]
+# Proyecto de To Do List
 
 Este es un proyecto simple creado con HTML, CSS y JavaScript (vanilla). Este README proporciona instrucciones sobre cómo ejecutar el proyecto localmente usando un servidor simple.
 

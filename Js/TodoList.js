@@ -17,9 +17,9 @@ export const ListaDeTareas = () => {
     tareaElemento.classList.add('animate__flipInY');
 
     tareaElemento.innerHTML = `
-       <input type="checkbox" id="tarea-${index}" ${tarea.completado ? 'checked' : ''}>
-      <label for="tarea-${index}" class="${tarea.completado ? 'comple' : ''}">${tarea.mensaje}</label>
-      <i data-index="${index}" class="fa-solid fa-trash btn-borrar"></i>
+      <input type="checkbox" id="tarea-${index}" ${tarea.completado ? 'checked' : ''}>
+      <label for="tarea-${index}" class="tarea ${tarea.completado ? 'comple' : ''}">${tarea.nombre} | ${tarea.fecha} | ${tarea.hora} | ${tarea.mensaje} </label>
+      <i data-index="${index}" class="bi bi-trash3 btn-borrar"></i>
     `;
 
 

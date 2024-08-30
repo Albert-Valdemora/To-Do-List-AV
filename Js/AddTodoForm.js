@@ -1,4 +1,4 @@
-export function Registro(mensaje) {
+export function Registro(mensaje, fecha, hora, nombre) {
   
   // generamos un id
   const id = Date.now() + Math.random().toString(36).substr(2, 9);
@@ -20,6 +20,9 @@ export function Registro(mensaje) {
   datos.push({
     id,
     mensaje,
+    fecha,
+    hora,
+    nombre,
     completado: false
   });
   

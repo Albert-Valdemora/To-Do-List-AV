@@ -5,18 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>To Do List</title>
 </head>
 
 <body>
-  <div class="cont-init">
-    <h2>Hello, <Span style="color: orange;">Albert</Span> Good Afternoon !!!</h2>
-    <h3>Time: <Span style="color: orange;">03:24:04 PM</Span></h3>
+  <div class="cont-init animate__animated animate__backInLeft">
+    <h2>Hola, <Span id="nameUser" style="color: #e05b4f;">Anonymous</Span> bienvenido!</h2>
+    <h3>Tiempo: <Span style="color: #e05b4f;" id="reloj">00:00:00</Span></h3>
   </div>
 
   <header class="cont-header animate__animated animate__fadeInDown">
@@ -24,26 +25,48 @@
 
     <div class="cont-reg">
       <form id="formulario">
-        <input id="inputMens" type="text" placeholder="add new task" autocomplete="off">
+        <input id="inputTime" type="time">
+        <input id="inputDate" type="date">
+        <input id="inputMens" type="text" placeholder="agregar tarea" autocomplete="off">
         <button id="setMens">Add</button>
       </form>
     </div>
   </header>
 
   <main>
+    <button class="edit animate__animated animate__bounceInUp"><i class="bi bi-person-fill-add"></i></button>
     <div class="cont-body">
 
     </div>
   </main>
 
-
   <footer>
-    <div class="cont-foot">
+    <div class="cont-foot animate__animated animate__flipInX">
       <h3>Albert Daniel Valdemora Suarez</h3>
     </div>
   </footer>
 
 
+  <!-- Modal -->
+  <div class="modal fade" id="nameModal" tabindex="-1" aria-labelledby="nameModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nameModalLabel">Cambiar Nombre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="newNameInput" class="form-control" placeholder="Nuevo nombre" autocomplete="off">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="saveNameBtn" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" src="./Js/App.js"></script>
 </body>
 

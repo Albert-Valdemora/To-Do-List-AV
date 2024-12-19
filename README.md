@@ -23,7 +23,7 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 2. **Abre el proyecto en Visual Studio Code**:
 
     ```bash
-    cd tu-proyecto
+    cd To-Do-List-AV
     code .
     ```
 
